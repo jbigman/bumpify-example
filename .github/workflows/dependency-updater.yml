@@ -1,0 +1,14 @@
+name: Bump Dependencies
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  bump-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Dependency Bump Action
+        uses: jbigman/node-dependency-updater@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
