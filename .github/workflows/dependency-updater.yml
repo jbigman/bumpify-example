@@ -11,4 +11,4 @@ jobs:
       - name: Run Dependency Bump Action
         uses: jbigman/node-dependency-updater@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_FOR_PULL_REQUEST }}
