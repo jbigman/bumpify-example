@@ -1,4 +1,4 @@
-name: Bump Dependencies
+name: Bumpify Dependencies
 on:
   schedule:
     - cron: "0 0 * * *"
