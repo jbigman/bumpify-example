@@ -1,7 +1,7 @@
 name: Bumpify Dependencies
 on:
-  schedule:
-    - cron: "0 0 * * *"
+  # schedule:
+  #  - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Dependency Bump Action
-        uses: jbigman/bumpify@main
+        uses: jbigman/bumpify@v1
         with:
           token: ${{ secrets.PAT_FOR_PULL_REQUEST }}
